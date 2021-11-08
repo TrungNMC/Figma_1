@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024px) {
+    .download-content {
+        left: unset;
+    }
+    .trafalgar-content {
+        left: unset;
+    }
+    .customer::before,
+    .customer::after {
+        display: none;
+    }
+}
