@@ -5,18 +5,22 @@ body {
 }
 
 .container {
-    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0 15px;
+    overflow-x: hidden;
 }
 
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 56px 0 84px;
 }
-
+.menu-buttons {
+    display: none;
+}
 button {
     border: none;
     outline: none;
@@ -42,7 +46,7 @@ button {
     padding: 17.5px 40px;
     outline: none;
     border: none;
-    width: 200px;
+    max-width: 200px;
     background-color: #458FF6;
     color: #fff;
 }
@@ -57,7 +61,7 @@ button {
     padding: 17.5px 40px;
     outline: none;
     border: none;
-    width: 200px;
+    max-width: 200px;
     background-color: #fff;
     border: 1px solid #458FF6;
     color: #458FF6;
@@ -95,15 +99,13 @@ button {
 }
 
 .virtual-image {
-    width: 693px;
-    height: 598px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .virtual-text {
-    width: 445px;
+    max-width: 445px;
 }
 
 .virtual-title {
@@ -128,7 +130,7 @@ button {
     position: absolute;
     top: 220px;
     left: -350px;
-    width: 938px;
+    max-width: 938px;
     height: 671px;
     background-image: url("/image/Vector.png");
     background-size: cover;
@@ -146,13 +148,13 @@ button {
     background-repeat: no-repeat;
     right: -11px;
     top: 561px;
-    width: 132px;
+    max-width: 132px;
     height: 115px;
     z-index: -1;
 }
 .services-header {
     margin: 0 auto;
-    width: 952px;
+    max-width: 952px;
     text-align: center;
 }
 
@@ -164,7 +166,7 @@ button {
 }
 
 .services-desc {
-    width: 952px;
+    max-width: 952px;
     padding-top: 33px;
     font-weight: 300;
     font-size: 18px;
@@ -198,7 +200,7 @@ button {
 }
 
 .services-item {
-    width: 350px;
+    max-width: 350px;
     height: 354px;
     padding: 58px 52px 47px 36px;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
@@ -221,7 +223,7 @@ button {
 }
 
 .services-item-desc-1 {
-    width: 266px;
+    max-width: 266px;
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
@@ -229,7 +231,7 @@ button {
 }
 
 .services-item-desc-2 {
-    width: 261px;
+    max-width: 261px;
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
@@ -246,9 +248,11 @@ button {
 }
 
 /* Trafalgar */
-.trafalgar-content {
+.trafalgar {
     position: relative;
     left: -50px;
+}
+.trafalgar-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,15 +261,12 @@ button {
 }
 
 .trafalgar-image {
-    width: 650px;
-    height: 477px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: block;
+    width: 100%;
 }
 
 .trafalgar-text {
-    width: 486px;
+    max-width: 486px;
     height: 388px;
 }
 
@@ -294,10 +295,12 @@ button {
 }
 
 /* Download */
-
-.download-content {
+.download {
     position: relative;
     left: 64px;
+}
+
+.download-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,15 +309,12 @@ button {
 }
 
 .download-image {
-    width: 650px;
-    height: 477px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: block;
+    width: 100%;
 }
 
 .download-text {
-    width: 486px;
+    max-width: 486px;
     height: 388px;
 }
 
@@ -378,8 +378,7 @@ button {
 }
 
 .customer-item {
-    width: 1120px;
-    height: 425px;
+
     background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
     border-radius: 24px;
     padding: 64px 108px 79px 108px;
@@ -422,8 +421,6 @@ button {
 }
 
 .avatar-image {
-    width: 133px;
-    height: 133px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -432,13 +429,13 @@ button {
 }
 
 .customer-item-content-texts {
-    width: 250px;
+    max-width: 250px;
     text-align: start;
     padding-left: 29px;
 }
 
 .customer-item-content-desc p{
-    width: 420px;
+    max-width: 420px;
     text-align: start;
     font-size: 19px;
     line-height: 30px;
@@ -460,7 +457,7 @@ button {
 /* Check */
 
 .check {
-    width: 1120px;
+    max-width: 1120px;
     margin: 0 auto;
     padding-bottom: 201px;
     position: relative;
@@ -482,7 +479,7 @@ button {
 
 .check-header {
     margin: 0 auto;
-    width: 952px;
+    max-width: 952px;
     text-align: center;
 }
 
@@ -518,7 +515,7 @@ button {
     padding-bottom: 69px;
 }
 .check-item {
-    width: 351px;
+    max-width: 351px;
     height: 512px;
     background-color: #fff;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
@@ -555,7 +552,7 @@ button {
 .footer {
     background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
     color: #fff;
-    padding: 118px auto 113px;
+    padding: 118px 0 113px;
     position: relative;
 }
 
@@ -694,7 +691,7 @@ button {
     font-size: 20px;
     position: absolute;
     bottom: 0;
-    right: 500px;
+    right: 40%;
 }
 .slick-prev {
     color: #5B9BF3;
@@ -703,11 +700,11 @@ button {
     font-size: 20px;
     position: absolute;
     bottom: 0;
-    left: 500px;
+    left: 40%;
 }
 
 .slick-arrow {
-    width: 60px;
+    max-width: 60px;
     height: 60px;
     border-radius: 100rem;
     display: flex !important;

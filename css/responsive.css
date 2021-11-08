@@ -1,8 +1,8 @@
 @media screen and (max-width: 1024px) {
-    .download-content {
+    .download {
         left: unset;
     }
-    .trafalgar-content {
+    .trafalgar {
         left: unset;
     }
     .customer::before,
@@ -10,3 +10,262 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .virtual-title {
+        font-size: 38px;
+    }
+
+    .virtual-desc {
+        font-size: 18px;
+        padding-bottom: 20px;
+        padding: 10px 0 10px;
+    }
+
+    .services-items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 37px 34px;
+       
+    }
+
+    .trafalgar-title {
+        font-size: 30px;
+        padding-bottom: 10px;
+        line-height: 30px;
+    }
+
+    .trafalgar-desc {
+        padding: 10px 0 10px;
+    }
+
+    .download-title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .trafalgar-content,
+    .download-content {
+        gap: 0 30px;
+    }
+
+    .customer-item-content-info,
+    .customer-item-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .customer-item {
+        height: 100%;
+    }
+
+    .customer-item-content {
+        padding-top: 10px;
+    }
+
+    .customer-item-title {
+        padding-bottom: 10px;
+    }
+    .customer-item-content-name {
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .customer-item-content-role {
+        padding-top: 15px;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    .customer-item-content-texts {
+        padding-left: 0;
+    }
+    .customer-item-content-desc p {
+        text-align: center;
+        font-size: 14px;
+        max-width: 270px;
+    }
+
+    .check-item-content-title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .check-title {
+        padding-bottom: 10px;
+    }
+    .check-content {
+        padding-top: 10px;
+    }
+
+    .footer {
+        padding: 20px 0 20px;
+    }
+    .footer-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        grid-gap: 0 20px;
+    }
+
+    .menu-buttons {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 3px;
+        line-height: 50px;
+        color: #000;
+        transition: .5s;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    .menu-buttons:hover {
+        color: #e84543;
+        text-align: center;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 55px;
+        right: -50%;
+        width: 150px;
+        transition: .5s;
+        background-color: white;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.7);
+        z-index: 100;
+    }
+
+    .container {
+        overflow-x: hidden;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 12px;
+        margin: 20px 0;
+        color: gray;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .virtual-content {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding-bottom: 50px;
+    }
+
+    .virtual-title {
+        font-size: 38px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .virtual-desc {
+        font-size: 18px;
+        padding-bottom: 20px;
+        padding: 10px 0 10px;
+        text-align: center;
+    }
+
+    .virtual-content button {
+        left: 50%;
+        transform: translateX(50%);
+    }
+
+    .services-items {
+        grid-template-columns: 100%;
+    }
+
+    .trafalgar-content {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .trafalgar-desc {
+        padding-top: 10px;
+        
+    }
+
+    .trafalgar-title {
+        padding-top: 10px;
+    }
+
+    .download-content {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .download-desc {
+        padding-top: 10px;
+        
+    }
+
+    .download-title {
+        padding-top: 10px;
+    }
+
+    .customer-item-title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .customer-item-content-name {
+        font-size: 18px;
+        line-height: 18px;
+        padding-top: 10px;
+    }
+
+    .customer-item-content-role {
+        padding-top: 15px;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .customer-item-content-desc p {
+        display: none;
+    }
+
+    .slick-prev {
+        left: 30%;
+    }
+
+    .slick-arrow {
+        right: 30%;
+    }
+
+    .customer {
+        padding: 50px;
+    }
+
+    .check-items {
+        grid-template-columns: 100%;
+    }
+
+    .check-item {
+        margin: 0 auto;
+    }
+
+    .footer {
+        padding: 20px auto 20px;
+    }
+    .footer-container {
+        grid-template-columns: 100%;
+    }
+
+}
+
